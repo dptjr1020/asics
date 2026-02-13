@@ -12,11 +12,11 @@
 </head>
 <body>
     <div id="fab">
-        <button class="chat"><img src="./images/fab_chat.png" alt="빠른채팅 열기"></button>
-        <button class="go_top"><img src="./images/fab_top.png" alt="페이지 최상단으로 이동"></button>
+        <button type="button" class="chat"><img src="./images/fab_chat.png" alt="빠른채팅 열기"></button>
+        <button type="button" class="go_top"><img src="./images/fab_top.png" alt="페이지 최상단으로 이동"></button>
     </div>
     <div id="top_bnr">
-        <div class="viewprot">
+        <div class="viewport">
             <div class="ad_full">
                 <div class="ad">
                     <a href="#">신규회원 가입 시 10,000 포인트 증정</a>
@@ -378,7 +378,7 @@
             <!-- e:gnb -->
         </div>
         <div class="right">
-            <form action="search" method="get">
+            <form action="search" method="get" id="h_search">
                 <input type="search" name="search_input" id="search_input" placeholder="리뷰 쓰고 2만포인트 받기!">
                 <button type="submit" id="search_btn">
                     <img src="./images/search.svg" alt="검색">
@@ -424,11 +424,11 @@
                     <a href="" class="buy_btn">구매하기</a>
                 </div>
             </div>
-            <div>
+            <div class="page_btn">
                 <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></button>
                 <button type="button" class="next_btn"><img src="./images/next_btn.jpg" alt="다음 광고 보기"></button>
-                <div class="pagenation">
-                    <span class="pn_active"></span>
+                <div class="progress_bar">
+                    <span class="pb_active"></span>
                 </div>
             </div>
         </div>
@@ -437,10 +437,9 @@
             <h1>Marathon Edition</h1>
             <ul class="category">
                 <li><a href="">APPAREL</a></li>
-                <li><a href="">SPEED</a></li>
-                <li><a href="">PROTECTION</a></li>
+                <li><a href="">TRAINING DAY</a></li>
             </ul>
-            <div class="slide_wrap_viewport">
+            <div class="apparel_slide_vp">
                 <ul class="ad_full">
                     <li>
                         <a href="#">
@@ -499,7 +498,71 @@
                         </a>
                     </li>
                 </ul>
-                <div>
+                <div class="page_btn">
+                    <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
+                    <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
+                </div>
+            </div>
+            <div class="training_slide_vp">
+                <ul class="ad_full">
+                    <li>
+                        <a href="#">
+                            <img src="./images/1011C052_004_SL_LT_GLB.png" alt="상품상세페이지로 이동">
+                            <h1>젤 카야노 32</h1>
+                            <p class="price"><em>199,000원</em></p>
+                            <p class="keyword">NEW</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/1011C214_001_SL_LT_GLB.png" alt="상품상세페이지로 이동">
+                            <h1>젤 님버스 28 플래티넘</h1>
+                            <p class="price"><em>219,000원</em></p>
+                            <p class="keyword">NEW</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/1012B978_001_SL_LT_GLB.png" alt="상품상세페이지로 이동">
+                            <h1>젤 님버스 28 플래티넘 우먼</h1>
+                            <p class="price"><em>219,000원</em></p>
+                            <p class="keyword">NEW</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/1012B862_020_SL_LT_GLB.png" alt="상품상세페이지로 이동">
+                            <h1>소닉블라스트 우먼</h1>
+                            <p class="price"><em>229,000원</em></p>
+                            <p class="keyword">NEW</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/1013A162_300_SL_LT_GLB.png" alt="상품상세페이지로 이동">
+                            <h1>소닉블라스트</h1>
+                            <p class="price"><em>229,000원</em></p>
+                            <p class="keyword">NEW</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/1012B979_001_SL_LT_GLB.png" alt="상품상세페이지로 이동">
+                            <h1>젤 카야노 32 플래티넘</h1>
+                            <p class="price"><em>219,000원</em></p>
+                            <p class="keyword">NEW</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/1011C215_001_SL_LT_GLB.png" alt="상품상세페이지로 이동">
+                            <h1>젤 카야노 32 플래티넘 우먼</h1>
+                            <p class="price"><em>219,000원</em></p>
+                            <p class="keyword">NEW</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="page_btn">
                     <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
                     <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
                 </div>
@@ -565,8 +628,8 @@
                 </ul>
                 <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
                 <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
-                <div class="pagenation">
-                    <span class="pn_active"></span>
+                <div class="progress_bar">
+                    <span class="pb_active"></span>
                 </div>
             </div>
         </div>
@@ -623,8 +686,8 @@
                 </ul>
                 <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
                 <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
-                <div class="pagenation">
-                    <span class="pn_active"></span>
+                <div class="progress_bar">
+                    <span class="pb_active"></span>
                 </div>
             </div>
         </div>
@@ -632,7 +695,7 @@
         <div id="ff_resolution">
             <div class="ad_full">
                 <div class="ad">
-                    <a><img src="./images/asc_hero_pc_court_ff3_260109.jpg" alt="제품목록으로 이동"></a>
+                    <a href="#"><img src="./images/asc_hero_pc_court_ff3_260109.jpg" alt="제품목록으로 이동"></a>
                     <h1>COURT FF™ 3 SERIES</h1>
                     <p>코트 위 순간을 빛내는 퍼포먼스</p>
                     <a href="" class="buy_btn">구매하기</a>
@@ -668,44 +731,44 @@
                 <ul class="ad_full">
                     <li>
                         <a href="#">
-                            <img src="./images/ad1.jpg" alt="관련사이트로 이동">
+                            <img src="./images/ad1.jpg" alt="#RUN: FIND YOUR SHOES">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/ad2.jpg" alt="관련사이트로 이동">
+                            <img src="./images/ad2.jpg" alt="ABOUT ASICS">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/ad3.jpg" alt="관련사이트로 이동">
+                            <img src="./images/ad3.jpg" alt="MEMBERSHIP PROGRAM">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/ad4.jpg" alt="관련사이트로 이동">
+                            <img src="./images/ad4.jpg" alt="RUN AMBASSADOR">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/ad5.jpg" alt="관련사이트로 이동">
+                            <img src="./images/ad5.jpg" alt="이 달의 첫 구매 할인 혜택">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/ad6.jpg" alt="관련사이트로 이동">
+                            <img src="./images/ad6.jpg" alt="수신 동의 시 포인트 지급!">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/ad7.jpg" alt="관련사이트로 이동">
+                            <img src="./images/ad7.jpg" alt="LAUNCH CALENDAR">
                         </a>
                     </li>
                 </ul>
                 <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
                 <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
-                <div class="pagenation">
-                    <span class="pn_active"></span>
+                <div class="progress_bar">
+                    <span class="pb_active"></span>
                 </div>
             </div>
         </div>
@@ -715,50 +778,48 @@
             <div id="cs_info_top">
                 <a href="#"><img src="./images/logo_footer.svg" alt="아식스"></a>
                 <p>
-                    <em>
-                        고객상담실
-                        <a href="#">080-929-3535</a>
-                        <a href="#">080-930-3535</a>
-                    </em>
+                
+                    고객상담실
+                    <a href="#">080-929-3535</a>
+                    <a href="#">080-930-3535</a>
+                
                 </p>
                 <p>운영시간 : 월-금 AM 10:00-PM17:00 / 점심시간 : PM12:00-13:00<br>* 공휴일은 고객상담실 유무입니다.</p>
             </div>
-            <div id="cs_info_bot">
-                <div id="kcp">
+            <ul id="cs_info_bot">
+                <li id="kcp">
                     <a href="#" class="kcp_logo"><img src="./images/kcp.png" alt="KCP"></a>
                     <p><em>NHN KCP 구매안전</em><br>에스크로 서비스</p>
-                </div>
-                <div id="isms">
+                </li>
+                <li id="isms">
                     <img src="./images/ico_isms.png" alt="ISMS">
                     <p><em>[인증범위]</em> 온라인쇼핑몰 서비스 운영(asics)<br><em>[유효기간</em> 2025-08-21 ~ 2028-08-20</p>
-                </div>
-            </div>
-        </div>
-        <div id="f_utility">
-            <ul>
-                <li><a href="#">고객센터</a></li>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">뉴스&이벤트</a></li>
-                <li><a href="#">주문조회</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">사이즈</a></li>
-                <li><a href="#">가이드</a></li>
-                <li><a href="#">회사가이드</a></li>
-                <li><a href="#">About ASICS</a></li>
-                <li><a href="#">Sustainability</a></li>
-                <li><a href="#">Carbon Footprint</a></li>
-                <li><a href="#">Move Her Mind</a></li>
-                <li><a href="#">The World Mental Health</a></li>
-                <li><a href="#">Day</a></li>
-                <li><a href="#">사이트맵</a></li>
-                <li><a href="#">매장찾기</a></li>
+                </li>
             </ul>
         </div>
+        <ul id="f_utility">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">뉴스&이벤트</a></li>
+            <li><a href="#">주문조회</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">사이즈</a></li>
+            <li><a href="#">가이드</a></li>
+            <li><a href="#">회사가이드</a></li>
+            <li><a href="#">About ASICS</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Carbon Footprint</a></li>
+            <li><a href="#">Move Her Mind</a></li>
+            <li><a href="#">The World Mental Health</a></li>
+            <li><a href="#">Day</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">매장찾기</a></li>
+        </ul>
         <div id="sns_adr">
             <div id="f_legal">
-                <a href="#"><em>이용약관</em></a>
-                <a href="#"><em>쿠키규정</em></a>
-                <a href="#"><em>개인정보처리방침</em></a>
+                <a href="#">이용약관</a>
+                <a href="#">쿠키규정</a>
+                <a href="#">개인정보처리방침</a>
             </div>
             <div id="f_sns">
                 <ul>
