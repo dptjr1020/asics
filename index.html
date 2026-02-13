@@ -30,7 +30,7 @@
     </div>
     <header>
         <div class="left">
-            <h1><a href="#" class="asics_logo"><img src="./images/logo.png" alt="아식스"></a></h1>
+            <h1><a href="#"><img src="./images/logo.png" alt="아식스"></a></h1>
             <nav>
                 <ul id="gnb">
                     <li>
@@ -384,9 +384,9 @@
                     <img src="./images/search.svg" alt="검색">
                 </button>
             </form>
-            <a href="#">로그인/회원가입</a>
-            <a href="#">고객센터</a>
-            <a href="#"><img src="./images/gnb_cart.svg" alt="장바구니로 이동"></a>
+            <a href="#" id="h_account">로그인/회원가입</a>
+            <a href="#" id="h_cs">고객센터</a>
+            <a href="#" id="h_cart"><img src="./images/gnb_cart.svg" alt="장바구니로 이동"></a>
         </div>
     </header>
     <!-- e: header -->
@@ -409,7 +409,7 @@
             </div>
         </div>
         <!-- e:메타스피드 -->
-        <div class="blast_slide_viewport">
+        <div id="blast_slide_viewport">
             <div class="ad_full">
                 <div class="ad">
                     <a href="#"><img src="./images/slide_img.jpg" alt="제품목록으로 이동"></a>
@@ -570,7 +570,7 @@
             <a href="" class="more_items">더 보기</a>
         </div>
         <!-- e:슬라이드영역2 -->
-        <a href="#" style="background-image:url(./images/images_1.jpg);" class="spotstyle_bnr">
+        <a href="#" style="background-image:url(./images/images_1.jpg);" class="sportstyle_bnr">
             <h1>ASISCS SPORTSTYLE</h1>
             <p>Inspired by sport, defined by style</p>
             <p>바로가기</p>
@@ -707,12 +707,10 @@
                     <a href="" class="buy_btn">구매하기</a>
                 </div>
             </div>
-            <div>
-                <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></button>
-                <button type="button" class="next_btn"><img src="./images/next_btn.jpg" alt="다음 광고 보기"></button>
-                <div class="pagenation">
-                    <span class="pn_active"></span>
-                </div>
+            <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></button>
+            <button type="button" class="next_btn"><img src="./images/next_btn.jpg" alt="다음 광고 보기"></button>
+            <div class="progress_bar">
+                <span class="pb_active"></span>
             </div>
         </div>
         <!-- e:슬라이드영역5 -->
@@ -777,14 +775,12 @@
         <div id="cs_info">
             <div id="cs_info_top">
                 <a href="#"><img src="./images/logo_footer.svg" alt="아식스"></a>
-                <p>
-                
+                <p class="call">
                     고객상담실
                     <a href="#">080-929-3535</a>
                     <a href="#">080-930-3535</a>
-                
                 </p>
-                <p>운영시간 : 월-금 AM 10:00-PM17:00 / 점심시간 : PM12:00-13:00<br>* 공휴일은 고객상담실 유무입니다.</p>
+                <p class="time">운영시간 : 월-금 AM 10:00-PM17:00 / 점심시간 : PM12:00-13:00<br>* 공휴일은 고객상담실 유무입니다.</p>
             </div>
             <ul id="cs_info_bot">
                 <li id="kcp">
