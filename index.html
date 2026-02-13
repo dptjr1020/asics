@@ -379,8 +379,10 @@
         </div>
         <div class="right">
             <form action="search" method="get">
-                <input type="search" name="search">
-                <img src="./images/search.svg" alt="검색">
+                <input type="search" name="search_input" id="search_input" placeholder="리뷰 쓰고 2만포인트 받기!">
+                <button type="submit" id="search_btn">
+                    <img src="./images/search.svg" alt="검색">
+                </button>
             </form>
             <a href="#">로그인/회원가입</a>
             <a href="#">고객센터</a>
@@ -390,16 +392,16 @@
     <!-- e: header -->
     <main>
         <div class="kinetic_wrap">
-            <a href="#"><img src="./images/hero_img.jpg" alt=""></a>
+            <a href="#"><img src="./images/hero_img.jpg" alt="GEL-KINETIC배너"></a>
             <div class="kinetic_text">
-                <h1>GEL-NYC</h1>
+                <h1>GEL-KINETIC FLUENT</h1>
                 <p>가장 현대적인 헤리티지, 젤 키네틱 플루언트</p>
                 <a href="#" class="buy_btn">구매하기</a>
             </div>
         </div>
         <!-- e:히어로배너 -->
         <div class="metaspeed_wrap">
-            <a href="#"><img src="./images/hero_img2.jpg" alt=""></a>
+            <a href="#"><img src="./images/hero_img2.jpg" alt="메타스피드시리즈 배너"></a>
             <div class="metaspeed_text">
                 <h1>METASPEED™ SERIES</h1>
                 <p>세 가지 레이싱화가 선사하는 새로울 컬러</p>
@@ -422,8 +424,12 @@
                     <a href="" class="buy_btn">구매하기</a>
                 </div>
             </div>
+            <div>
                 <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></button>
                 <button type="button" class="next_btn"><img src="./images/next_btn.jpg" alt="다음 광고 보기"></button>
+                <div class="pagenation">
+                    <span class="pn_active"></span>
+                </div>
             </div>
         </div>
         <!-- e:슬라이드영역1 -->
@@ -493,27 +499,30 @@
                         </a>
                     </li>
                 </ul>
-                <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
-                <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
+                <div>
+                    <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
+                    <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
                 </div>
             </div>
             <a href="" class="more_items">더 보기</a>
         </div>
         <!-- e:슬라이드영역2 -->
-        <div class="sprtstyle_bnr">
-            <a href="#"><img src="./images/images_1.jpg" alt="해당 카테고리 페이지로 이동"></a>
-        </div>
+        <a href="#" style="background-image:url(./images/images_1.jpg);" class="spotstyle_bnr">
+            <h1>ASISCS SPORTSTYLE</h1>
+            <p>Inspired by sport, defined by style</p>
+            <p>바로가기</p>
+        </a>
         <!-- e:컨텐츠1 -->
         <div class="kayano">
             <a href="#"><img src="./images/asc_hero_pc_gel-kayano14_260210_02.jpg" alt="제품목록으로 이동"></a>
-            <div class="hero_bnr_text">
+            <div class="kayano_text">
                 <h1>GEL-KAYANO™ 14</h1>
                 <p>모두가 기다려온, 카야노 14의 새로운 컬러</p>
                 <a href="#" class="buy_btn">구매하기</a>
             </div>
         </div>
         <!-- e:컨텐츠2 -->
-        <div class="slide_items">
+        <div class="style_magazine">
             <h1>Style Magazine</h1>
             <div class="slide_wrap_viewport">
                 <ul class="ad_full">
@@ -554,21 +563,24 @@
                         </a>
                     </li>
                 </ul>
-                <button class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
-                <button class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
+                <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
+                <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
+                <div class="pagenation">
+                    <span class="pn_active"></span>
+                </div>
             </div>
         </div>
         <!-- e : 슬라이드영역3 -->
         <div class="nyc">
             <a href="#"><img src="./images/asc_hero_pc_gel-nyc_260203.jpg" alt="제품목록으로 이동"></a>
-            <div class="hero_bnr_text">
+            <div class="nyc_text">
                 <h1>GEL-NYC</h1>
                 <p>2000년대 헤리티지 러닝화를 재해석한 어반 라이프스타일</p>
                 <a href="#" class="buy_btn">구매하기</a>
             </div>
         </div>
         <!-- e:컨텐츠3 -->
-        <div class="slide_items">
+        <div id="shop_b_s">
             <h1>Shop By Sports</h1>
             <div class="slide_wrap_viewport">
                 <ul class="ad_full">
@@ -609,12 +621,15 @@
                         </a>
                     </li>
                 </ul>
-                <button class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
-                <button class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
+                <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
+                <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
+                <div class="pagenation">
+                    <span class="pn_active"></span>
+                </div>
             </div>
         </div>
         <!-- e:슬라이드영역4 -->
-        <div class="slide_wrap_viewport">
+        <div id="ff_resolution">
             <div class="ad_full">
                 <div class="ad">
                     <a><img src="./images/asc_hero_pc_court_ff3_260109.jpg" alt="제품목록으로 이동"></a>
@@ -629,21 +644,25 @@
                     <a href="" class="buy_btn">구매하기</a>
                 </div>
             </div>
+            <div>
                 <button type="button" class="prev_btn"><img src="./images/prev_btn.svg" alt="이전 광고 보기"></button>
                 <button type="button" class="next_btn"><img src="./images/next_btn.jpg" alt="다음 광고 보기"></button>
+                <div class="pagenation">
+                    <span class="pn_active"></span>
+                </div>
             </div>
         </div>
         <!-- e:슬라이드영역5 -->
         <div class="ff_tf">
             <a href="#"><img src="./images/asc_hero_pc_cs_ff_tf.jpg" alt="제품목록으로 이동"></a>
-            <div class="hero_bnr_text">
+            <div class="ff_tf_text">
                 <h1>C3 FF TF</h1>
                 <p>발끝에서 시작되는 진화, 멈추지 않는 퍼포먼스</p>
                 <a href="#" class="buy_btn">구매하기</a>
             </div>
         </div>
         <!-- e:컨텐츠4 -->
-        <div class="slide_contents">
+        <div class="news_event">
             <h1>NEWS&EVENT</h1>
             <div class="slide_wrap_viewport">
                 <ul class="ad_full">
@@ -683,36 +702,69 @@
                         </a>
                     </li>
                 </ul>
-                <button class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
-                <button class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
+                <button type="button" class="prev_btn"><img src="./images/prev_btn2.svg" alt="이전 광고 보기"></button>
+                <button type="button" class="next_btn"><img src="./images/next_btn2.jpg" alt="다음 광고 보기"></button>
+                <div class="pagenation">
+                    <span class="pn_active"></span>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <div id="f_1">
-            <img src="./images/logo_footer.svg" alt="메인페이지로 이동">
-            <p>고객상담실 080-929-3535 080-930-3535</p>
-            <p>운영시간 : 월-금 AM 10:00-PM17:00 / 점심시간 : PM12:00-13:00<br>* 공휴일은 고객상담실 유무입니다.</p>
+        <div id="cs_info">
+            <div id="cs_info_top">
+                <a href="#"><img src="./images/logo_footer.svg" alt="아식스"></a>
+                <p>
+                    <em>
+                        고객상담실
+                        <a href="#">080-929-3535</a>
+                        <a href="#">080-930-3535</a>
+                    </em>
+                </p>
+                <p>운영시간 : 월-금 AM 10:00-PM17:00 / 점심시간 : PM12:00-13:00<br>* 공휴일은 고객상담실 유무입니다.</p>
+            </div>
+            <div id="cs_info_bot">
+                <div id="kcp">
+                    <a href="#" class="kcp_logo"><img src="./images/kcp.png" alt="KCP"></a>
+                    <p><em>NHN KCP 구매안전</em><br>에스크로 서비스</p>
+                </div>
+                <div id="isms">
+                    <img src="./images/ico_isms.png" alt="ISMS">
+                    <p><em>[인증범위]</em> 온라인쇼핑몰 서비스 운영(asics)<br><em>[유효기간</em> 2025-08-21 ~ 2028-08-20</p>
+                </div>
+            </div>
         </div>
-        <div id="f_2">
+        <div id="f_utility">
             <ul>
-                <li><a href="">고객센터</a></li>
-                <li><a href="">공지사항</a></li>
-                <li><a href="">주문조회</a></li>
-                <li><a href="">FAQ</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">뉴스&이벤트</a></li>
+                <li><a href="#">주문조회</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">사이즈</a></li>
+                <li><a href="#">가이드</a></li>
+                <li><a href="#">회사가이드</a></li>
+                <li><a href="#">About ASICS</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Carbon Footprint</a></li>
+                <li><a href="#">Move Her Mind</a></li>
+                <li><a href="#">The World Mental Health</a></li>
+                <li><a href="#">Day</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">매장찾기</a></li>
             </ul>
         </div>
-        <div id="f_3">
-            <div id="f_nav2">
-                <a href="">이용약관</a>
-                <a href="">쿠키규정</a>
-                <a href="">개인정보처리방침</a>
+        <div id="sns_adr">
+            <div id="f_legal">
+                <a href="#"><em>이용약관</em></a>
+                <a href="#"><em>쿠키규정</em></a>
+                <a href="#"><em>개인정보처리방침</em></a>
             </div>
             <div id="f_sns">
                 <ul>
-                    <li><a href=""><img src="./images/ico_instagram.svg" alt="공식 인스타페이지로 이동"></a></li>
-                    <li><a href=""><img src="./images/ico_facebook.svg" alt="공식 페이스북 페이지로 이동"></a></li>
-                    <li><a href=""><img src="./images/ico_kakaotalk.svg" alt="공식 카카오톡채널로 이동"></a></li>
+                    <li><a href="#"><img src="./images/ico_instagram.svg" alt="공식 인스타페이지로 이동"></a></li>
+                    <li><a href="#"><img src="./images/ico_facebook.svg" alt="공식 페이스북 페이지로 이동"></a></li>
+                    <li><a href="#"><img src="./images/ico_kakaotalk.svg" alt="공식 카카오톡채널로 이동"></a></li>
                 </ul>
             </div>
             <address>
@@ -720,7 +772,10 @@
                 주소 : 서울특별시 종구 을지로5길 16(삼화타워) 14F<br>
                 대표전화 : 02-3663-8335 / 고객 상담실 : 080-930-3535<br>
                 사업자등록번호 : 109-86-10809
-                통신판매신고번호 : 2018-서울종구-1740
+                통신판매신고번호 : 2018-서울종구-1740<br>
+                E=mail : customercare-kr@asics.com<br>
+                사업자정보확인<br>
+                &copy; 2024 ASICS Korea
             </address>
         </div>
     </footer>
