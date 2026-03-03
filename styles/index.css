@@ -29,7 +29,7 @@
 #top_bnr .bnr_close {
     position: absolute; right: 40px; top: 50%; transform: translateY(-50%);
 }
-/* @keyframes bnrmv {
+@keyframes bnrmv {}
     @keyframes slide {
     /* 첫 번째 배너 보여줌 (2초 정지) */
     0%   { transform: translateX(0); }
@@ -40,10 +40,15 @@
     83%  { transform: translateX(-1140px); }
     /* 복제 첫 번째로 이동 (1초) */
     100% { transform: translateX(-2280px); }
-} */
+}
 /* -------------------------헤더좌측--------------------- */
-#wrap header {display: flex; flex-flow: row nowrap; align-items: center;}
-#wrap header .left {display: flex; justify-content: center; align-items: center;}
+#wrap header {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    padding: 0 50px;
+}
+#wrap header .left {
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
 #wrap header .left h1 {}
 #wrap header .left h1 a {}
 #wrap header .left h1 a img {
@@ -51,7 +56,7 @@
 }
 #wrap header .left nav {}
 #wrap header .left nav #gnb {
-    display: flex;
+    display: flex; flex-flow: row nowrap; justify-content: center;
 }
 #wrap header .left nav #gnb > li {padding: 0 20px;}
 #wrap header .left nav #gnb > li a {
@@ -70,18 +75,25 @@
 #wrap header .left nav #gnb > li .lnb .lnb_right p {}
 /* ------------------------------헤더 우측 검색~장바구니--------------------------- */
 #wrap header .right {
-    display: flex; justify-content: center; align-items: center;
+    display: flex; flex-flow:row nowrap; justify-content: center; align-items: center;
+    gap: 30px;
 }
 #wrap header .right #h_search {
     display: flex; flex-flow: row nowrap;
-    justify-content: space-around; align-items: center;
-    width: 230px; padding: 10px 15px;
+    justify-content:space-around; align-items: center;
+    padding: 5px 15px;
     border: 1px solid #001e63; border-radius: 30px;
 }
+#wrap header .right #h_search #search_input,
+#wrap header .right #h_account,
+#wrap header .right #h_cs {font-size: 0.75rem; color:#001e63;}
 #wrap header .right #h_search #search_input {}
-#wrap header .right #h_search #search_btn {}
+#wrap header .right #h_search #search_btn {width: 24px; margin-left: 12px;}
 #wrap header .right #h_search #search_btn img {}
-#wrap header .right #h_account {}
+#wrap header .right #h_account {font-weight: 600;}
+#wrap header .right #h_account::after {
+    content: '|'; display: block;
+}
 #wrap header .right #h_cs {}
 #wrap header .right #h_cart {}
 #wrap header .right #h_cart img {}
